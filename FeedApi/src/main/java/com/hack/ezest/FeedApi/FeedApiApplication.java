@@ -1,13 +1,13 @@
-package com.ezest.hackathon.NoMiddleMen;
+package com.hack.ezest.FeedApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NoMiddleMenApplication {
+public class FeedApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NoMiddleMenApplication.class, args);
+		SpringApplication.run(FeedApiApplication.class, args);
 	}
 
 }

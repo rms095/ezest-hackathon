@@ -1,13 +1,13 @@
-package com.ezest.hackathon.NoMiddleMen;
+package com.hack.ezest.feed.feedsapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NoMiddleMenApplicationTests {
+class FeedsApiApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
