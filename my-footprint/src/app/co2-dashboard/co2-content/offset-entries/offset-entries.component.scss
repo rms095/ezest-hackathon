@@ -1,0 +1,27 @@
+
+:host table {
+  width: 100%;
+}
+
+:host tr.mat-footer-row {
+  font-weight: bold;
+}
+
+:host tr.mat-footer-row, tr.mat-row {
+  height: 20px !important;
+}
+
+.graph-layout {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+:host mat-card-header {
+  border-bottom: solid 1px grey;
+}
+
+:host mat-card-title {
+  font-size: 13px !important;
+  align-items: center;
+  text-transform: uppercase;
+  color: grey;
+}

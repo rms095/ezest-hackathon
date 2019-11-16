@@ -1,0 +1,40 @@
+.card-layout {
+  width: 170px !important;
+  height: 100px !important;
+  border-radius: 15px;
+}
+
+.graph-layout {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+:host mat-card-header {
+  border-bottom: solid 1px grey;
+}
+
+:host mat-card-title {
+  font-size: 13px !important;
+  align-items: center;
+  text-transform: uppercase;
+  color: grey;
+}
+
+:host mat-card-content {
+  height: 80% !important;
+}
+
+:host mat-icon {
+  font-size : 37px;
+}
+
+.thumbs_up {
+  color: green;
+}
+
+.warning {
+  color: orange;
+}
+
+.thumbs_down {
+  color: red;
+}

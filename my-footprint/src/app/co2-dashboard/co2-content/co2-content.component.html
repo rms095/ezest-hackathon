@@ -1,0 +1,28 @@
+<mat-drawer-container >
+  <mat-drawer class="side-bar" mode="side" opened >
+    <mat-nav-list>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active"
+         [routerLink]="['/myfootprint', {outlets : {sideoutlet: 'account-summary'}}]">Account Summary</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active"
+         [routerLink]="['/myfootprint', {outlets : {sideoutlet: 'offset-entries'}}]">Expenses & Offset</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active"
+         [routerLink]="['/myfootprint', {outlets : {sideoutlet: 'buy-sell'}}]">Buy/Sell Credits</a>
+      <mat-divider></mat-divider>
+<!--      <a mat-list-item routerLinkActive="active"
+         [routerLink]="['/myfootprint', {outlets : {sideoutlet: 'reports'}}]">Reports</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active"
+         [routerLink]="['/myfootprint', {outlets : {sideoutlet: 'co2-emissions'}}]">CO2 Emissions - wiki</a>
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLinkActive="active" (click)="downloadFile()" >myCarbonFootprint Overview</a>-->
+      <!--<mat-divider></mat-divider>-->
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet name="sideoutlet"></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+

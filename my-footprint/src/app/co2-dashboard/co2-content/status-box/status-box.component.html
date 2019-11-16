@@ -1,0 +1,81 @@
+<div fxLayout="column"  fxLayoutGap="10px" style="margin: 5px">
+  <div fxLayout="row" fxLayoutAlign="space-between center"  >
+    <mat-card class="card-layout">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>Status</mat-card-title>
+      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+        <mat-icon class="thumbs_up" [matTooltip]="'Good Score'">thumb_up</mat-icon>
+        <!--<mat-icon class="thumbs_down" [matTooltip]="'You have already exhausted the credit limit'">thumb_down</mat-icon>-->
+        <!--<mat-icon class="warning" [matTooltip]="'Please Top up your Carbon Credit'">warning</mat-icon>-->
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-layout">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>Opening Credits</mat-card-title>
+      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+        10
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-layout">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>Remaining Credits</mat-card-title>
+      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+        16
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-layout">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>Penalties</mat-card-title>
+      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+        0
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card-layout">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>Profit/Loss</mat-card-title>
+      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+        <span>₹15 <mat-icon style="color: green">arrow_upward</mat-icon></span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-card class="graph-layout" fxFlex="34%">
+      <mat-card-header>
+        <mat-card-title>Total Personal Expenditures</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <google-chart #chart
+                      [type]="'PieChart'"
+                      [data]="pieChartData"
+                      [columnNames]="columnNamesForPieChart"
+                      [options]="options"
+                      [width]="350"
+                      [height]="200">
+
+        </google-chart>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="graph-layout" fxFlex="65%">
+      <mat-card-header>
+        <mat-card-title>Carbon Expenditure Prediction</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <google-chart #chart
+                      [type]="'LineChart'"
+                      [data]="areaChartData"
+                      [columnNames]="columnNamesForAreaChart"
+                      [options]="options"
+                      [width]="700"
+                      [height]="200">
+
+        </google-chart>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+

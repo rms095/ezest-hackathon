@@ -1,0 +1,35 @@
+<div fxLayout="row" style="margin: 6px" fxLayoutGap="10px">
+    <mat-card class="graph-layout" fxFlex="62%">
+        <mat-card-header>
+            <mat-card-title>C02 Emissions Trading</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <img src="./../../../../assets/images/co2Exchange.png" style="border: 2px grey" />
+        </mat-card-content>
+    </mat-card>
+    <div fxLayout="row" fxLayoutAlign="space-around center" style="margin: 6px; width: 100%">
+        <mat-card class="graph-layout" >
+            <mat-card-header>
+                <mat-card-title>Buy</mat-card-title>
+            </mat-card-header>
+            <mat-card-content fxLayout="column">
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Enter Quantity">
+              </mat-form-field>
+              <button mat-raised-button (click)="orderPlaced()">Buy</button>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="graph-layout">
+            <mat-card-header width=100%>
+                <mat-card-title> Sell </mat-card-title>
+            </mat-card-header>
+            <mat-card-content fxLayout="column">
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Enter Quantity">
+              </mat-form-field>
+              <button mat-raised-button (click)="orderPlaced()">Sell</button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

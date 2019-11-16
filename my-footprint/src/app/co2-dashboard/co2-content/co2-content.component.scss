@@ -1,0 +1,11 @@
+:host mat-drawer-container {
+  position: fixed;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+:host mat-drawer {
+  width: 16%;
+}

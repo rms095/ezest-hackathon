@@ -1,0 +1,24 @@
+img {
+  width: 100%;
+}
+
+.header .footer {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.title {
+  color: #002244;
+  font-size: 17px;
+}
+
+.forgot-password {
+  color: #002244;
+  text-decoration: none;
+}
+:host mat-card {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}

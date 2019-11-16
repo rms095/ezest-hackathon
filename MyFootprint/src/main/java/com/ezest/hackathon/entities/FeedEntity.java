@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Table(name = "feed")
@@ -21,7 +22,16 @@ public class FeedEntity {
     private Long feedId;
 
     @Column(name = "pan_number")
-    private Long panNumber;
+    private String panNumber;
+
+    @Column(name = "regional_code")
+    private String regionalCode;
+
+    @Column(name = "state_code")
+    private String stateCode;
+
+    @Column(name = "geographical_scope")
+    private String geographicalScope;
 
     @Column(name = "gas_consumption")
     private Long gasConsumption;
@@ -34,4 +44,7 @@ public class FeedEntity {
 
     @Column(name = "electricity_consumption")
     private Long electricityConsumption;
+
+    @Column(name = "updated_date")
+    private Date updatedDate;
 }

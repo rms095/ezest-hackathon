@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayoutGap="5px">
+    <mat-icon>account_balance_wallet</mat-icon>
+    <span>myCarbonFootprint</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">{{userName}}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item (click)="logOut()">Log Out</button>
+    </mat-menu>
+    <img src="../../../assets/logos/logo.png" [style.height.px]="50">
+  </mat-toolbar-row>
+</mat-toolbar>
