@@ -13,20 +13,20 @@
 
           <ng-container matColumnDef="creditCardExpenses">
             <th mat-header-cell *matHeaderCellDef> Credit Card Expenses</th>
-            <td mat-cell *matCellDef="let transaction"> {{transaction.creditCardExpenses| currency}} </td>
+            <td mat-cell *matCellDef="let transaction"> {{transaction.creditCardExpenses| currency:"₹":0}} </td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
 
           <ng-container matColumnDef="debitCardExpenses">
             <th mat-header-cell *matHeaderCellDef> Debit Card Expenses</th>
-            <td mat-cell *matCellDef="let transaction"> {{transaction.debitCardExpenses| currency}} </td>
+            <td mat-cell *matCellDef="let transaction"> {{transaction.debitCardExpenses| currency:"₹":0}} </td>
             <td mat-footer-cell *matFooterCellDef> Total</td>
           </ng-container>
 
           <!-- Cost Column -->
           <ng-container matColumnDef="amount">
             <th mat-header-cell *matHeaderCellDef> Amount</th>
-            <td mat-cell *matCellDef="let transaction"> {{transaction.amount | currency}} </td>
+            <td mat-cell *matCellDef="let transaction"> {{transaction.amount | currency:"₹":0}} </td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
 

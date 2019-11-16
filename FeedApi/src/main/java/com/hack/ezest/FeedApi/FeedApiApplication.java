@@ -6,6 +6,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 
 @SpringBootApplication
 public class FeedApiApplication implements CommandLineRunner {
@@ -19,7 +22,20 @@ public class FeedApiApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		feedService.saveFeedData("");
-		System.out.println(feedService.findAll());
+//		feedService.saveFeedData("");
+//		System.out.println(feedService.findAll());
+
+//		String command = "python --version";
+//		Process p = Runtime.getRuntime().exec(command );
+//		BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+//		String ret = in.readLine();
+//		System.out.println("value is : "+ret);
+
+		String fetching = "python --version";
+		String[] commandToExecute = new String[]{"cmd.exe", "/c", fetching};
+				Process p = Runtime.getRuntime().exec(commandToExecute );
+		BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+		String ret = in.readLine();
+		System.out.println("value is : "+ret);
 	}
 }
